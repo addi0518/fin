@@ -1,0 +1,137 @@
+body{
+    text-align: center;
+}
+h2{
+    color: black;
+}
+p:hover{
+    text-decoration: underline;
+    color: cornflowerblue;
+}
+ul,ol,li{list-style: none;}
+ul::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+a{
+    text-decoration: none;
+    color: inherit; 
+    display: block;
+}
+header{
+    background-color: #f29c74;
+    width: 100%;
+    height: auto;
+    z-index: 999;
+}
+#logo{
+    width: 250px;
+    float: left;
+    text-align: center;
+    margin-left: 5%;
+}
+#gnbBox{
+    background-color: #f29c74;
+    width: 100%;
+    margin: 0 auto;
+    margin-left: 20%;
+}
+#gnb>li{
+    position: relative;
+    float: left;
+    width: 15%;
+    height: 50px;
+    display: block;
+    font: 1.2rem sans-serif;
+}
+ul>li>a{
+    padding: 0;
+    margin-top: 15%;
+    text-align: center;
+    font:0.9rem;
+    color: white;
+}
+.submenu0,.submenu1,.submenu2{
+    display: none;
+}
+
+.submenu0{
+    position: absolute;
+    top: 107%;
+    text-align: center;
+    width: 82%;
+    background-color: #ffcab2;
+    font-size: 1rem;
+}
+.submenu0>li{
+    width: 85%;
+    height: 100%;
+}
+.submenu0>li>a{
+    margin: 12%;
+}
+
+.submenu1{
+    position: absolute;
+    top: 107%;
+    text-align: center;
+    width: 82%;
+    background-color: #ffcab2;
+    font-size: 1rem;
+}
+.submenu1>li{
+    width: 85%;
+    height: 100%;
+}
+.submenu1>li>a{
+    margin: 12%;
+}
+.submenu2{
+    position: absolute;
+    top: 107%;
+    text-align: center;
+    width: 82%;
+    height: auto;
+    background-color: #ffcab2;
+    font-size: 1rem;
+}
+.submenu2>li{
+    width: 85%;
+    height: 100%;
+}
+.submenu2>li>a{
+    margin: 12%;
+}
+
+#gnb>li:hover>a{
+    color: black;
+    background: #ffcab2;
+}
+
+#gnb>li:hover>.submenu0{
+    display: block;
+    background: #ffcab2;
+}
+#gnb>li:hover>.submenu0 a:hover{
+    color: black;
+    background: #cc9882;
+}
+
+#gnb>li:hover>.submenu1{
+    display: block;
+    background: #ffcab2;
+}
+#gnb>li:hover>.submenu1 a:hover{
+    color: black;
+    background: #cc9882;
+}
+
+#gnb>li:hover>.submenu2{
+    display: block;
+    background: #ffcab2;
+}
+#gnb>li:hover>.submenu2 a:hover{
+    color: black;
+    background: #cc9882;
+}
